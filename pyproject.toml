@@ -1,0 +1,17 @@
+[project]
+name = "lolwiki"
+version = "0.1.0"
+description = "Async LoL Wiki scraper with caching"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["aiohttp", "beautifulsoup4", "lxml"]
+
+[tool.ruff]
+select = ["E", "F", "B", "I"]
+line-length = 88
+target-version = "py311"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = ["tests"]
